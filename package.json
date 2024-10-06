@@ -1,0 +1,20 @@
+{
+  "name": "telegram-website-bridge",
+  "module": "src/bot.ts",
+  "type": "module",
+  "scripts": {
+    "start":"bun run src/bot.ts",
+    "build":"bun run tsc"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0"
+  }
+}
